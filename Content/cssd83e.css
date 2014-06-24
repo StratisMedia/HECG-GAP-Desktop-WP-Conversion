@@ -1,3 +1,15 @@
+/*
+Theme Name:       GAP-STRATIS
+Theme URI:        http://stratis-media.com/
+Version:          0.1.0
+Description:      GAP Theme from Unbounce.
+Author:           Stratis Media
+Template:         twentyfourteen
+Template Version: 1.0.0
+GitHub Theme URI: https://github.com/StratisMedia/HECG-GAP-Desktop-WP-Conversion
+GitHub Branch:    master
+*/
+
 @charset "utf-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
