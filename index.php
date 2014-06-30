@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanks - Global Access Project</title>
-    <link href="gap.css" rel="stylesheet"/>
+<?php
 
-</head>
-<body >
-    
+get_header();
 
-<div class="header">
-    <div class="contentContainer">
-        <h1><a href="/"><abbr title="Global Access Project">GAP</abbr> / Global Access Project</a></h1>
-        <h2>A One-Stop Accessibility Shop for the <strong>Higher Education Sector</strong></h2>
-        <div class="headerArea cf">
+?>
+   
+ <div class="headerArea cf">
             <div id="headerContent" role="main" >
                 <ul>
                     <li class="specialists"><abbr title="Global Access Project">GAP</abbr> brings together leading international specialists to help the Higher Education sector provide students with a disability access to the full learning experience</li>
@@ -22,20 +12,40 @@
                     <li class="GAPSupport"><abbr title="Global Access Project">GAP</abbr> provides both <strong>REMOTE + ON SITE SUPPORT</strong> for our clients, allowing us to build a close relationship directly with you.</li>
                 </ul>
             </div>
+            <div>
+              <div id="contactForm" role="form" >
+                    <form action="/home/AskHow">
+                        <fieldset class="clearfix">
+                            <legend>Ask me how...</legend>
 
-            <div id="contactForm" role="form" >
-                <div class="confirmMessage">
-                    <h2>Thank You</h2>
-                    <p>We have recieved your details and we will contact you shortly.</p>
+                            <div class="form-control">
+                                <label for="fullName"></label>
+                                <input required type="text" id="fullName" name="fullName"
+                                       class="text" placeholder="Full Name">
+                            </div>
+                            <div class="form-control">
+                                <label for="email"></label>
+                                <input required type="email" id="email" name="emailAddress" class="text" placeholder="Enter your email">
+                            </div>
+                            <div class="form-control">
+                                <input type="text" pattern="\d{6,11}" required title="Please specify a valid phone number" name="phoneNumber" class="text" placeholder="Phone Number">
+                            </div>
+                            <div>
+                                <input type="submit" value="Contact GAP Today" id="submitButton" name="submitButton" />
+                            </div>
+                            <p class="disclaimer">By supplying your contact information, you authorise GAP to contact you via email or phone about GAP's services. You will have the opportunity to opt-out of future communications.</p>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
 <div class="mainMessage" id="mainMessage" role="banner">
     <div class="contentContainer">
-        <h2><a href="/home/mediaRelease">Disability no longer a barrier to higher education</a></h2>
+        <h2><a href="http://localhost/wordpress/?page_id=31">Disability no longer a barrier to higher education</a></h2>
     </div>
 </div>
 
@@ -79,12 +89,9 @@
                 <h4>Chief Operating Officer</h4>
                 <p>A Senior Higher Education professional with over 10 years experience in; design and implementation of strategic projects; strategic planning; data analysis; legislative policy analysis and position submissions; &amp; management performance reporting. Prior to higher education Kylie was a Senior Risk Analyst and Business Intelligence Manager in the finance sector. Kylie believes that change can only happen in education through informed choices and measurable outcomes for students.</p>
             </div>
-
         </div>
-
     </div>
 </div>
-
 <div class="callToAction" role="complementary" >
     <div class="contentContainer">
         <h2>Timing is everything</h2>
@@ -94,13 +101,8 @@
 </div>
 
 
-<div class="footer" role="complementary" >
-    <div class="contentContainer">
-        <p>Copyright 2014 <abbr title="Higher Education Consulting Group">HECG</abbr> Pty Ltd - Privacy Policy</p>
-    </div>
-</div>
+<?php
 
+get_footer();
 
-    
-</body>
-</html>
+?>
